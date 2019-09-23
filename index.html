@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Word Scramble</title>
+  <link href="css/gameStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="home-scene">
+    <button id="play-button">Play</button>
+    <button id="score-button">High Scores</button>
+  </div>
+
+  <div id="score-scene">
+    <button id="score-home-button">Home</button>
+  </div>
+
+  <div id="map-scene">
+    <button id="map-home-button">Home</button>
+    <div id="levelcont">
+      <table id="tLevels">
+      </table>
+    </div>
+  </div>
+
+  <div id="game-scene">
+    <button id="game-home-button">Home</button><br><br>
+    <button id="game-map-button">Map</button>
+    <div class="container">
+      <div class="header">
+        <table id="thead">
+          <tr>
+            <td> Round :</td>
+            <td> <span id="round">1</span></td>
+            <td> Score :</td>
+            <td><span id="score">0</span></td>
+            <td> Timer :</td>
+            <td><span id="countdown" class="timer"></span></td>
+            <td><button type="button" id="pause"></button></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="body">
+        <div id="tRight">
+          <table id="tRBody">
+            <tr>
+              <td>H</td>
+              <td>O</td>
+              <td>T</td>
+            </tr>
+            <tr>
+              <td>h</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>l</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="footer">
+        <table id="tContent">
+          <tr>
+            <td>
+              <button type="button" id="Resetbtn">Reset</button>
+            </td>
+            <td>
+              <input type="text" id="inputText" readonly="readonly">
+            </td>
+            <td>
+              <button type="button" id="checkbtn">Check</button>
+            </td>
+          </tr>
+        </table>
+        <table id="tfooter">
+          <tr>
+            <td>H</td>
+            <td>O</td>
+            <td>T</td>
+            <td>a</td>
+            <td>e</td>
+            <td>l</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="win-scene">
+    <button id="next-button">next</button>
+  </div>
+
+  <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
